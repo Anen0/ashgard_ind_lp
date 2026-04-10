@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{page_title}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100;0,600;1,100;1,400;1,600&family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/animate.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/magnific-popup.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/aos.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/ionicons.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/bootstrap-datepicker.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/jquery.timepicker.css') }}"> -->
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/css/style.css') }}">
+
+    <!-- FONTAWESOME 7.2.0 CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/brands.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/regular.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/solid.min.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/svg.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/svg-with-js.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/v4-font-face.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/v4-shims.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/css/v5-font-face.min.css') }}"> -->
+
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="">
+
+          <!-- <img src="{{ url_for('static', filename='libraries/images/Final_LOGO_STANDALONE_small.png') }}" alt="" width="75" srcset="">  -->
+          <p class="COMPANY_name pb-0 mb-0">ASHGARD INDUSTRIES</p>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="#home_page" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about_us" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#our_service" class="nav-link">Our Services</a></li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
+              </div>
+          </li> -->
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Case Studies</a></li> -->
+          <li class="nav-item"><a href="#contact_us" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+    <!-- <div class="js-fullheight"> -->
+  <!-- HOME -->
+    <div id="home_page" class="hero-wrap js-fullheight">
+      <video class="hero-bg-video" autoplay muted loop playsinline>
+        <source src="{{ url_for('static', filename='libraries/vid/3130284-Uhd-1080-30Fps.mp4') }}" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <!-- <div id="particles-js"></div> -->
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center ml-5_ px-4" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            
+            <img src="{{ url_for('static', filename='libraries/images/Final_LOGO_INC_STANDALONE.png') }}" class="img-fluid mb-3" width="250" alt="" srcset="">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">  
+              <strong>ASHGARD INDUSTRIES</strong>
+            </h1>
+            <p class="text-white text-left_">
+              <!-- <strong> -->
+                Guarding Data. Powering Progress 
+              <!-- </strong> -->
+              <br>
+              <!-- We are a preeminent independent technology company and leading global provider 
+              of project management and integration services. We deliver proven end-to-end security safety 
+              and communication systems and platforms. -->
+              
+            </p>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <a href="#" class="btn btn-primary btn-outline-white mt-3 px-5 py-3">Contact Us</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="bg-light bg-dark">
+      <section class="ftco-section-featured ftco-animate">
+        <div class="container-fluid" data-scrollax-parent="true">
+          <div class="row no-gutters d-flex align-items-center" data-scrollax=" properties: { translateY: '-30%'}">
+
+            <div class="col-md-3 mb-3">
+              <a href="#" class="featured-img">
+                <div class="text-1 p-4 d-flex align-items-center">
+                  <h3>The Verge<br><span class="tag">Website</span></h3>
+                </div>
+                <img src="{{ url_for('static', filename='libraries/images/image_1.jpg') }}" class="img-fluid" alt="">
+                <div class="text p-4 d-flex align-items-center">
+                  <div class="user d-flex align-items-center">
+                    <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                    <h3>John Bruce <br><span class="position">Designer</span></h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="row no-gutters">
+                <div class="col-md-12">
+                  <div class="row no-gutters d-flex align-items-end">
+                    <div class="col-md-8">
+                      <a href="#" class="featured-img">
+                        <div class="text-1 p-4 d-flex align-items-center">
+                          <h3>Racks<br><span class="tag">Website</span></h3>
+                        </div>
+                        <img src="{{ url_for('static', filename='libraries/images/image_5.jpg')}}" class="img-fluid" alt="">
+                        <div class="text p-4 d-flex align-items-center">
+                          <div class="user d-flex align-items-center">
+                            <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                            <h3>John Bruce <br><span class="position">Designer</span></h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4">
+                      <a href="#" class="featured-img">
+                        <div class="text-1 p-4 d-flex align-items-center">
+                          <h3>Zendesk<br><span class="tag">Website</span></h3>
+                        </div>
+                        <img src="{{ url_for('static', filename='libraries/images/image_4.jpg') }}" class="img-fluid" alt="">
+                        <div class="text p-4 d-flex align-items-center">
+                          <div class="user d-flex align-items-center">
+                            <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                            <h3>John Bruce <br><span class="position">Designer</span></h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 p-0 m-0">
+                  <div class="row no-gutters d-flex align-items-start">
+                    <div class="col-md-8">
+                      <a href="#" class="featured-img">
+                        <div class="text-1 p-4 d-flex align-items-center">
+                          <h3>Curator<br><span class="tag">Website</span></h3>
+                        </div>
+                        <img src="{{ url_for('static', filename='libraries/images/image_6.jpg') }}" class="img-fluid" alt="">
+                        <div class="text p-4 d-flex align-items-center">
+                          <div class="user d-flex align-items-center">
+                            <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                            <h3>John Bruce <br><span class="position">Designer</span></h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#" class="featured-img">
+                        <div class="text-1 p-4 d-flex align-items-center">
+                          <h3>Tasty<br><span class="tag">Website</span></h3>
+                        </div>
+                        <img src="{{ url_for('static', filename='libraries/images/image_3.jpg') }}" class="img-fluid" alt="">
+                        <div class="text p-4 d-flex align-items-center">
+                          <div class="user d-flex align-items-center">
+                            <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                            <h3>John Bruce <br><span class="position">Designer</span></h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-3 m-0">
+              <a href="#" class="featured-img">
+                <div class="text-1 p-4 d-flex align-items-center">
+                  <h3>Voyage<br><span class="tag">Website</span></h3>
+                </div>
+                <img src="{{ url_for('static', filename='libraries/images/image_2.jpg') }}" class="img-fluid" alt="">
+                <div class="text p-4 d-flex align-items-center">
+                  <div class="user d-flex align-items-center">
+                    <div class="user-img mr-3" style="background-image: url(static/libraries/images/person_1.jpg);"></div>
+                    <h3>John Bruce <br><span class="position">Designer</span></h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+          <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-8 m-0 text-center heading-section ftco-animate">
+              <h2 class="h1"> -->
+                <!-- UI/UX, visual, <strong >Web designer</strong> with more than 12 years of experience in designing websites and mobile apps. -->
+                <!-- Actionable insights through advanced open-source intelligence and investigative analysis. 
+                We navigate the deep web to protect your assets and verify the truth. -->
+                <!-- <strong class="px-3">We</strong> are a preeminent independent technology company and leading global provider 
+                of project management and integration services. We deliver proven end-to-end security safety 
+                and communication systems and platforms. -->
+              <!-- </h2> -->
+              <!-- <p><a href="#" class="btn btn-primary mt-3 py-3 px-5">Get in touch</a></p> -->
+            <!-- </div>
+          </div>
+        </div>
+      </section>
+    </div> -->
+    
+
+  <!-- ABOUT US -->
+    <section id="about_us" class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5_ pb-5_">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <span class="subheading">. . .</span>
+            <h2 class="mb-4">About Us</h2>
+            <p class="text-left">
+               ASHGARD was Founded in 2014 by group of I.T. and Intelligence experts. ASHGARD brings together the power of operational experience with a deep understanding of open source intelligence.
+               ASHGARD has manufactured and developed its own products, delivering off-the-shelf solutions as well as custom-tailored alternatives solutions for intelligence agencies. 
+               Today, our company is both an agile innovator and a heavy hitter, successfully servicing many authorized agencies in the Phillippine Government and some intelligence agency in SouthEast Asia. 
+               We are confident we have what it takes to repeat that success for you. 
+            </p>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-3 d-flex justify-content-center mb-3"><span class="align-self-center icon-lightbulb-o"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Strategy</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-1 d-flex justify-content-center mb-3"><span class="align-self-center icon-laptop"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Design</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-2 d-flex justify-content-center mb-3"><span class="align-self-center icon-gear"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Development</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-4 d-flex justify-content-center mb-3"><span class="align-self-center icon-live_help"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Help &amp; Supports</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+
+  <!-- ADDITIONAL HERO SLOGAN -->
+    <section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <img src="{{ url_for('static', filename='libraries/images/ashgard_bg.png') }}" class="parallax-img-bg" alt="">
+        
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 text-center text-white heading-section heading-section-white ftco-animate">
+                <p>
+                  <strong class="px-2">We</strong>are a preeminent independent technology company and leading global provider 
+                  of project management and integration services. We deliver proven end-to-end security safety 
+                  and communication systems and platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+
+  <!-- OUR SERVICES -->
+    <section id="our_service" class="ftco-section">
+      <div class="container">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">. . .</span>
+            <h2 class="mb-4">Our Services</h2>
+            <p>Discover our range of specialized solutions designed to uncover critical information and support investigations with accurate, actionable intelligence.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="portfolio.html" class="image" style="background-image: url('static/libraries/images/pexels-tima-miroshnichenko-5380664.jpg'); " data-scrollax=" properties: { translateY: '-20%'}">
+            </a>
+            <div class="text">
+              <h4 class="subheading"><i class="fa-regular fa-address-card fa-2xl"></i></h4>
+              <h2 class="heading">Information Tracing</h2>
+              <p>
+                We leverage open-source intelligence and advanced data analysis techniques to locate, verify, and connect digital information across multiple platforms and sources.
+              </p>
+              <!-- <a href="portfolio.html" class="btn btn-primary px-4">View Portfolio</a> -->
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="portfolio.html" class="image image-2 order-2" style="background-image: url('static/libraries/images/joa70-data-security-9145391.jpg');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+              <h4 class="subheading"><i class="fa-solid fa-user-shield fa-2xl"></i></h4>
+              <h2 class="heading">Cyber Security Services</h2>
+              <p>
+                Our solutions help identify vulnerabilities, protect digital assets, and strengthen defenses against evolving cyber threats through proactive monitoring and risk assessment.
+              </p>
+              <!-- <a href="portfolio.html" class="btn btn-primary px-4">View Portfolio</a> -->
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="portfolio.html" class="image" style="background-image: url('static/libraries/images/pexels-cottonbro-8720616.jpg'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h4 class="subheading"><i class="fa-regular fa-folder-open fa-2xl"></i></h4>
+              <h2 class="heading">Evidence Collection</h2>
+              <p>We systematically gather, preserve, and document digital evidence to support investigations, ensuring accuracy, integrity, and compliance with legal standards.</p>
+              <!-- <a href="portfolio.html" class="btn btn-primary px-4">View Portfolio</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-12 text-center">
+            <span><a href="#" class="btn btn-primary py-3 px-5">View All Projects</a></span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Customer Says</span>
+            <h2 class="mb-4">Our satisfied customer says</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(static/libraries/images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(static/libraries/images/person_2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Interface Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(static/libraries/images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">UI Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(static/libraries/images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Web Developer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(static/libraries/images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">System Analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    <!-- <section class="ftco-section ftco-counter" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Our achievements</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="400">0</strong>
+                <span>Customers are satisfied with our professional support</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Amazing preset options to be mixed and combined</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="8000">0</strong>
+                <span>Average response time on live chat support channel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Blog</span>
+            <h2>Recent Blog</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('static/libraries/images/image_1.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <a href="blog-single.html" class="block-20" style="background-image: url('static/libraries/images/image_2.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="200">
+              <a href="blog-single.html" class="block-20" style="background-image: url('static/libraries/images/image_3.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+  <!-- CONTACT US -->
+    <section id="contact_us" class="ftco-section bg-light" style="padding-bottom: 10em !important;">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">. . .</span>
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team through our two office locations or reach out online for inquiries.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ftco-animate">
+            <div class="blog-entry">
+              <!-- <a href="#" class="block-20" style="background-image: url('static/libraries/images/image_1.jpg');"> </a> -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.9121372778374!2d121.02865266253377!3d14.565990957364395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c900321d2a39%3A0x6c19b92217575372!2sAntel%20Spa%20%26%20Serenity%20Suites!5e0!3m2!1sen!2sph!4v1775627235033!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1067.2140195403922!2d121.02865266253377!3d14.565990957364395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c900321d2a39%3A0x6c19b92217575372!2sAntel%20Spa%20%26%20Serenity%20Suites!5e1!3m2!1sen!2sph!4v1775631136621!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="text p-4 d-block">
+                <!-- <div class="meta mb-3"> </div> -->
+                <h3 class="heading"> Makati, Philippines </h3>
+
+                <p><strong class="mr-3">Office :</strong>S-3 2F, Antel SPA and Serenity Suites, Gen. Luna St., corner Makati Ave., and Salamanca St., Makati City, Ph</p>
+                <p><strong class="mr-3">Phone :</strong>+63-2-833-29974</p>
+                <p><strong class="mr-3">Email :</strong>admin@ashgard.com.ph</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <!-- <a href="#" class="block-20" style="background-image: url('static/libraries/images/image_2.jpg');">
+              </a> -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.6602180539567!2d123.94469528209514!3d10.369029340182529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a3f002df3caf%3A0xe41e0f04c3927541!2sASHGARD%20INDUSTRIES!5e0!3m2!1sen!2sph!4v1775627562433!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4338.589225426835!2d123.94469528209514!3d10.369029340182529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a3f002df3caf%3A0xe41e0f04c3927541!2sASHGARD%20INDUSTRIES!5e1!3m2!1sen!2sph!4v1775631283298!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="text p-4">
+                <!-- <div class="meta mb-3"> </div> -->
+                <h3 class="heading"> Cebu, Philippines </h3>
+
+                <p><strong class="mr-3">Office :</strong>C. Congson St., Cambiohan, Casili, Consolacion, Cebu, Philippines</p>
+                <p><strong class="mr-3">Phone :</strong>+63-32-520-8534</p>
+                <p><strong class="mr-3">Email :</strong>admin@ashgard.com.ph</p>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer p-0 ftco-bg-dark_ ftco-section_">
+      <div class="container">
+        <!-- <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget my-4">
+              <h2 class="ftco-heading-2"><i class="fa-solid fa-building fa-lg mr-3"></i> Office Address</h2>
+              <h5 class="text-white">Cebu</h5>
+              <p>C. Congson St., Cambiohan, Casili, Consolacion, Cebu, Philippines</p>
+              <br>
+              <h5 class="text-white">Makati</h5>
+              <p>S-3 2F, Antel SPA and Serenity Suites, Gen. Luna St., corner Makati Ave., and Salamanca St., Makati City, Ph</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget my-4 ml-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">Case studies</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Portfolio</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget my-4">
+              <h2 class="ftco-heading-2"><i class="fa-solid fa-phone-flip fa-lg mr-3"></i> Contact Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+                <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+                <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+                <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+              </ul>
+              
+              <p><strong class="mr-2">Cebu office</strong>:  +63-32-520-8534</p>
+              <p><strong class="mr-2">Makati office</strong>: +63-2-833-29974</p>
+              <p><strong class="mr-2">Email</strong>: admin@ashgard.com.ph</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p class="mt-3"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{ url_for('static', filename='libraries/js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery-migrate-3.0.1.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/popper.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/bootstrap.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery.easing.1.3.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery.waypoints.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery.stellar.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/owl.carousel.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery.magnific-popup.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/aos.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/jquery.animateNumber.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/bootstrap-datepicker.js ') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='libraries/js/jquery.timepicker.min.js ') }}"></script> -->
+  <script src="{{ url_for('static', filename='libraries/js/particles.min.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/particle.js ') }}"></script>
+  <script src="{{ url_for('static', filename='libraries/js/scrollax.min.js ') }}"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+  <!-- <script src="{{ url_for('static', filename='libraries/js/google-map.js ') }}"></script> -->
+  <script src="{{ url_for('static', filename='libraries/js/main.js ') }}"></script>
+
+  <!-- FONTAWESOME 7.2.0 JS -->
+  <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/all.min.js') }}"></script>  
+  <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/brands.min.js') }}"></script>  
+  <!-- <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/conflict-detection.min.js') }}"></script>   -->
+  <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/fontawesome.min.js') }}"></script>  
+  <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/regular.min.js') }}"></script>  
+  <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/solid.min.js') }}"></script>  
+  <!-- <script src="{{ url_for('static', filename='libraries/packages/fontawesome-free-7-2-0-web/js/v4-shims.min.js') }}"></script>   -->
+
+  </body>
+</html>
