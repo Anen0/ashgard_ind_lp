@@ -260,6 +260,74 @@
 	};
 	OnePageNav();
 
+	// -----------------
+	// Active nav link on scroll (IntersectionObserver)
+	var ActiveNavOnScroll = function() {
+	var sectionIds = ['home_page', 'about_us', 'our_service', 'contact_us'];
+
+	var sections = sectionIds
+		.map(function(id) { return document.getElementById(id); })
+		.filter(Boolean);
+
+	// Map section id -> nav link
+	function linkForSectionId(id) {
+		return document.querySelector('#ftco-nav a.nav-link[href="#' + id + '"]');
+	}
+
+	function clearActive() {
+		document
+		.querySelectorAll('#ftco-nav .nav-link.active, #ftco-nav .nav-item.active')
+		.forEach(function(el) { el.classList.remove('active'); });
+	}
+
+	function setActive(id) {
+		var link = linkForSectionId(id);
+		if (!link) return;
+
+		clearActive();
+
+		// Some themes style .nav-item.active, some style .nav-link.active
+		link.classList.add('active');
+		if (link.parentElement) link.parentElement.classList.add('active');
+	}
+
+	// If IntersectionObserver isn't supported, do nothing (or you can add a scroll fallback)
+	if (!('IntersectionObserver' in window)) return;
+
+	// This makes the "active" section switch when it crosses an imaginary line ~35% down the viewport.
+	// Adjust these to taste.
+	var observer = new IntersectionObserver(function(entries) {
+		// Keep only visible entries
+		var visible = entries.filter(function(e) { return e.isIntersecting; });
+		if (!visible.length) return;
+
+		// Pick the most visible one
+		visible.sort(function(a, b) { return b.intersectionRatio - a.intersectionRatio; });
+		setActive(visible[0].target.id);
+	}, {
+		root: null,
+		threshold: [0.15, 0.25, 0.35, 0.5, 0.65],
+		rootMargin: '-10% 0px -50% 0px'
+	});
+
+	sections.forEach(function(section) { observer.observe(section); });
+
+	// Set initial active state on load (useful when refreshing mid-page)
+	// Choose the first section currently in view; otherwise default to home.
+	var initialSet = false;
+	for (var i = 0; i < sections.length; i++) {
+		var rect = sections[i].getBoundingClientRect();
+		if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
+		setActive(sections[i].id);
+		initialSet = true;
+		break;
+		}
+	}
+	if (!initialSet) setActive('home_page');
+	};
+	ActiveNavOnScroll();
+
+	// -------------------------------------------------------------------
 
 	// magnific popup
 	$('.image-popup').magnificPopup({
