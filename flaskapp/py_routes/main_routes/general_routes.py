@@ -2,13 +2,13 @@ from flask import render_template, jsonify, request, redirect, url_for, flash
 from flask_login import login_user, current_user, logout_user, login_required
 
 # Models
-from flaskapp.models.accounts_model import User_accnt
-from flaskapp.models.crud_model import Crud_tbl
+# from flaskapp.models.accounts_model import User_accnt
+# from flaskapp.models.crud_model import Crud_tbl
 
 # Forms
 # from flaskapp.py_forms.crud_forms import Basic_post
 
-from flaskapp import db, table_builder
+# from flaskapp import db, table_builder
 
 from flaskapp.py_routes.main_routes import main
 

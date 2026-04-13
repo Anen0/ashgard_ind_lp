@@ -13,7 +13,7 @@ from flask_login import LoginManager
 from flaskapp.config import Config
 
 # Datatable serverside model
-from flaskapp.serverside.table_specific.crud_srv_model import TableBuilder
+# from flaskapp.serverside.table_specific.crud_srv_model import TableBuilder
 
 # SET PACKAGES
 mysql           = MySQL()
@@ -24,7 +24,7 @@ login_manager   = LoginManager()
 # jsglue          = JSGlue() # enables url_for to be used on the front-end
 
 
-table_builder = TableBuilder()
+# table_builder = TableBuilder()
 
 # APPLICATION PROPER
 def run_dammit(config_class=Config):
@@ -36,7 +36,7 @@ def run_dammit(config_class=Config):
 
     # Initialize packages
     mysql.init_app(app)
-    db.init_app(app)
+    # db.init_app(app)
     migrate.init_app(app, db)
     bcrypt.init_app(app)
     # jsglue.init_app(app)
