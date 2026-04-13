@@ -1,14 +1,5 @@
 from flask import render_template, jsonify, request, redirect, url_for, flash
-from flask_login import login_user, current_user, logout_user, login_required
 
-# Models
-# from flaskapp.models.accounts_model import User_accnt
-# from flaskapp.models.crud_model import Crud_tbl
-
-# Forms
-# from flaskapp.py_forms.crud_forms import Basic_post
-
-# from flaskapp import db, table_builder
 
 from flaskapp.py_routes.main_routes import main
 
@@ -18,29 +9,7 @@ from flaskapp.py_routes.main_routes import main
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/dashboard', methods=['GET', 'POST'])
 def main_dashboard():
-    page_title = 'Main page'
-    # form = Basic_post()
-
-    # if request.method == 'POST':
-    #     st_str = request.form['s_string']
-    #     st_int = request.form['s_int']
-    #     st_txt = request.form['s_txt']
-
-    #     form_data = Crud_tbl(
-    #         some_string   = st_str,
-    #         some_int      = st_int,
-    #         some_text     = st_txt
-    #     )
-    #     db.session.add(form_data)
-    #     db.session.commit()
-
-    #     status = jsonify({
-    #             'string': st_str,
-    #             'integer': st_int,
-    #             'text': st_txt,
-    #             'status':'ADDED'
-    #         })
-    #     return status
+    page_title = 'Ashgard Industries'
     
     return render_template('index.html', page_title=page_title)
     
