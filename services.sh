@@ -3,12 +3,13 @@
 sudo systemctl daemon-reload &
 
 echo -e "\n-------------------------------------- [$(date)]"
-echo "- AI-Landingpage: SERVICE RESTARTING"
+echo "- AI-Landingpage: SERVICE RESTARTING \n"
 
 sudo systemctl restart ashgard_landingpage.service  
 # sudo systemctl restart nginx
 
-echo "- AI-Landingpage: SERVICE RESTARTED"
+echo -e "\n-------------------------------------- [$(date)]"
+echo "- AI-Landingpage: SERVICE RESTARTED \n\n"
 
 
 
